@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vydya Pandith | Software developer: Python, full-stack, AI</title>
+  <meta name="description" content="Vydya Pandith, a software developer in Bengaluru. Projects in Python, FastAPI, React, PostgreSQL, machine learning, security monitoring and ServiceNow integration. Every project is tested, documented and deployed.">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vydya Pandith | Software developer">
+  <meta property="og:description" content="Python, full-stack and AI projects that are tested, documented and deployed.">
+  <meta property="og:url" content="https://vydyap.github.io/">
+  <link rel="canonical" href="https://vydyap.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="#top">Vydya Pandith</a>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <p class="eyebrow">Software developer · Bengaluru, India</p>
+      <h1>I build software that turns slow, manual work into a few clicks.</h1>
+      <p class="lead">
+        Python backends, React frontends, machine learning and integrations between systems.
+        Every project below is tested, documented and running live, with real numbers rather than claims.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="#projects">See my projects</a>
+        <a class="button" href="https://github.com/VydyaP">GitHub</a>
+        <a class="button" href="https://www.linkedin.com/in/vydya-pandit-9338ba259">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="wrap" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Featured projects</h2>
+
+      <article class="feature">
+        <a class="shot" href="https://vydyap-logsentinel-dashboardapp-wagokk.streamlit.app/">
+          <img src="assets/img/logsentinel.webp" width="1200" height="1417" loading="lazy"
+               alt="LogSentinel overview dashboard: 17,187 events ingested, alerts over time, top offending IPs and alerts by MITRE ATT&amp;CK technique">
+        </a>
+        <div class="body">
+          <p class="kicker">Security monitoring · ServiceNow integration</p>
+          <h3>LogSentinel</h3>
+          <p>
+            A small Security Operations Centre tool. It reads SSH and web server logs, detects attacks,
+            helps an analyst triage them, and opens and tracks the incidents in ServiceNow.
+          </p>
+          <ul class="points">
+            <li>9 YAML detection rules mapped to <strong>MITRE ATT&amp;CK</strong>, plus an Isolation Forest anomaly model.</li>
+            <li>On labelled test traffic the rules reach <strong>82% precision</strong> and catch <strong>12 of 13 attacks</strong> (92% recall). The evaluation also says what they miss.</li>
+            <li>High and critical incidents open a <strong>ServiceNow</strong> ticket through the REST API. Correlation IDs prevent duplicates, new alerts become work notes, and resolving the ticket closes the alerts. Verified on a real instance.</li>
+            <li>Triage with SLA tracking, one-click PDF incident reports and a runbook for every detection.</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies">
+            <li>Python</li><li>PostgreSQL</li><li>FastAPI</li><li>scikit-learn</li><li>ServiceNow REST API</li><li>Streamlit</li><li>Docker</li><li>GitHub Actions</li>
+          </ul>
+          <p class="links">
+            <a href="https://vydyap-logsentinel-dashboardapp-wagokk.streamlit.app/">Live demo</a>
+            <a href="https://github.com/VydyaP/logsentinel">Code</a>
+            <a href="https://github.com/VydyaP/logsentinel#servicenow-integration">How the ServiceNow integration works</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <a class="shot" href="https://ticketsense-opal.vercel.app">
+          <img src="assets/img/ticketsense.webp" width="1200" height="874" loading="lazy"
+               alt="TicketSense dashboard with ticket counts by category, priority and status, and the model's test-set metrics">
+        </a>
+        <div class="body">
+          <p class="kicker">Full-stack app · Machine learning</p>
+          <h3>TicketSense</h3>
+          <p>
+            An IT help-desk app that reads each new support ticket and predicts its category and priority,
+            so tickets reach the right team faster.
+          </p>
+          <ul class="points">
+            <li>NLP model (TF-IDF and logistic regression) trained on <strong>48,545 real IT support tickets</strong> from an openly licensed dataset.</li>
+            <li><strong>84.9% category accuracy</strong> and <strong>88.3% priority accuracy</strong> on 9,709 held-out tickets, against a 70% majority-class baseline.</li>
+            <li>FastAPI and PostgreSQL backend with a React and TypeScript frontend. Agents' corrections are stored as data for retraining.</li>
+            <li>Health checks, Prometheus metrics and request IDs in every log line. 29 automated tests run on every push. Deployed on Render, Neon and Vercel.</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies">
+            <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>scikit-learn</li><li>React</li><li>TypeScript</li><li>Docker</li><li>GitHub Actions</li>
+          </ul>
+          <p class="links">
+            <a href="https://ticketsense-opal.vercel.app">Live demo</a>
+            <a href="https://github.com/VydyaP/ticketsense">Code</a>
+            <a href="https://ticketsense-api-nq5s.onrender.com/docs">API docs</a>
+          </p>
+          <p class="note">Free hosting: if the app has been idle, the first request can take up to a minute.</p>
+        </div>
+      </article>
+
+      <h2 class="sub">More projects</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/img/invoice.webp" width="1200" height="768" loading="lazy"
+               alt="invoice-to-excel review screen flagging an invoice whose grand total does not add up">
+          <div class="card-body">
+            <h3>invoice-to-excel</h3>
+            <p>Reads supplier bills (PDFs and phone photos) with the Claude API and produces a checked Excel sheet. Arithmetic and GST checks flag anything a person should review.</p>
+            <p class="stack">Python · Claude API · Streamlit · pytest · CI</p>
+            <p class="links"><a href="https://github.com/VydyaP/invoice-to-excel">Code</a></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/sales-report.webp" width="910" height="1287" loading="lazy"
+               alt="One-page PDF sales report with key figures, top products and daily sales chart">
+          <div class="card-body">
+            <h3>sales-report-automator</h3>
+            <p>Cleans messy sales exports into a formatted Excel report and a one-page PDF summary, and records every correction it makes.</p>
+            <p class="stack">Python · pandas · Streamlit</p>
+            <p class="links">
+              <a href="https://sales-report-automator-tb29qzqz9fwzsj2dzymqck.streamlit.app/">Live demo</a>
+              <a href="https://github.com/VydyaP/sales-report-automator">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/business-site.webp" width="1200" height="755" loading="lazy"
+               alt="Business website starter shown on a desktop screen">
+          <div class="card-body">
+            <h3>business-website-starter</h3>
+            <p>A fast, mobile-first website for a local business, with an enquiry form that saves to Google Sheets. Generated with Python and deployed by GitHub Actions.</p>
+            <p class="stack">Python · Jinja · JavaScript · GitHub Actions</p>
+            <p class="links">
+              <a href="https://vydyap.github.io/business-website-starter/">Live demo</a>
+              <a href="https://github.com/VydyaP/business-website-starter">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card text-only">
+          <div class="card-body">
+            <h3>Prospect Scan</h3>
+            <p>An AI research tool for sales teams. It profiles a company, finds gaps and writes a pitch where every claim links to its source.</p>
+            <p class="stack">Python · Flask · PostgreSQL · Next.js · LLM APIs</p>
+            <p class="links"><a href="https://github.com/VydyaP/salespitch_model">Code</a></p>
+          </div>
+        </article>
+
+        <article class="card text-only">
+          <div class="card-body">
+            <h3>Taalic</h3>
+            <p>A web app for organising and exploring Carnatic music compositions.</p>
+            <p class="stack">React · TypeScript · Tailwind · Firebase</p>
+            <p class="links">
+              <a href="https://taalic.vercel.app">Live demo</a>
+              <a href="https://github.com/VydyaP/Taalic">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="card text-only">
+          <div class="card-body">
+            <h3>movie_success_predictor</h3>
+            <p>Classifies films as hits or flops from IMDb Top 1000 data with a random forest model.</p>
+            <p class="stack">Python · scikit-learn · pandas</p>
+            <p class="links"><a href="https://github.com/VydyaP/movie_success_predictor">Code</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <dl class="skills">
+        <div><dt>Backend and data</dt><dd>Python, FastAPI, Flask, SQLAlchemy, pandas, REST APIs</dd></div>
+        <div><dt>Frontend</dt><dd>React, TypeScript, Next.js, Tailwind CSS</dd></div>
+        <div><dt>Machine learning and AI</dt><dd>scikit-learn (classification, anomaly detection), LLM APIs (Claude, Gemini, Groq, Mistral), structured extraction</dd></div>
+        <div><dt>Databases and cloud</dt><dd>PostgreSQL, SQL, Alembic, Firebase, Neon, Render, Vercel, GitHub Pages</dd></div>
+        <div><dt>Security and ITSM</dt><dd>Log analysis, detection rules, MITRE ATT&amp;CK, alert triage and SLAs, ServiceNow Table API</dd></div>
+        <div><dt>Engineering practice</dt><dd>Git, pytest, Vitest, GitHub Actions CI/CD, Docker, ruff, mypy, monitoring and structured logging</dd></div>
+      </dl>
+    </section>
+
+    <section class="wrap contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>I'm looking for software internships and apprenticeships. The quickest way to reach me is by email.</p>
+      <div class="actions">
+        <a class="button primary" href="mailto:vydyanpandithtv@gmail.com">vydyanpandithtv@gmail.com</a>
+        <a class="button" href="https://www.linkedin.com/in/vydya-pandit-9338ba259">LinkedIn</a>
+        <a class="button" href="https://github.com/VydyaP">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>© 2026 Vydya Pandith · Hand-written HTML and CSS · <a href="https://github.com/VydyaP/vydyap.github.io">Source</a></p>
+  </footer>
+</body>
+</html>
